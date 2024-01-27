@@ -1,0 +1,26 @@
+﻿syntax = "proto3";
+ 
+option csharp_namespace = "GrpcCodeGenerator_TestProject.TestClasses";
+ 
+package grpcImplementationGenerator;
+ 
+message MethodRequest
+{
+    string Field1 = 1;    
+    string Field2 = 2;
+    string Field1258 = 3;
+}
+ 
+message MethodResponse
+{
+    string Responce = 1;
+}
+ 
+service MyGrpcApi 
+{
+    rpc FirstMethod (MethodRequest) returns (MethodResponse);
+    rpc FirstStreamMethod (MethodRequest) returns (stream MethodResponse);
+    rpc SecondMethod (MethodRequest) returns (MethodResponse);    
+    rpc SecondStreamMethod (MethodRequest) returns (stream MethodResponse);
+}
+

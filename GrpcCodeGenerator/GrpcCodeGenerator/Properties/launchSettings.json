@@ -1,0 +1,11 @@
+{
+  "profiles": {
+    "GrpcCodeGenerator": {
+      "commandName": "Project"
+    },
+    "Debug_GrpcCodeGenerator": {
+      "commandName": "DebugRoslynComponent",
+      "targetProject": "..\\GrpcCodeGenerator_TestProject\\GrpcCodeGenerator_TestProject.csproj"
+    }
+  }
+}
