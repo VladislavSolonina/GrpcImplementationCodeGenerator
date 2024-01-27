@@ -7,6 +7,9 @@
     <IsRoslynComponent>true</IsRoslynComponent>
     <EnforceExtendedAnalyzerRules>true</EnforceExtendedAnalyzerRules>
     <LangVersion>latest</LangVersion>
+    <PackageId>VladislavSolonina.GrpcCodeGenerator</PackageId>
+    <Title>VS.GrpcCodeGenerator</Title>
+    <Authors>VladislavSolonina</Authors>
   </PropertyGroup>
 
   <ItemGroup>
