@@ -10,6 +10,9 @@
     <PackageId>VladislavSolonina.GrpcCodeGenerator</PackageId>
     <Title>VS.GrpcCodeGenerator</Title>
     <Authors>VladislavSolonina</Authors>
+    <FileVersion>$(AssemblyVersion)</FileVersion>
+    <AssemblyVersion>2.0.0</AssemblyVersion>
+    <Version>$(AssemblyVersion)</Version>
   </PropertyGroup>
 
   <ItemGroup>
