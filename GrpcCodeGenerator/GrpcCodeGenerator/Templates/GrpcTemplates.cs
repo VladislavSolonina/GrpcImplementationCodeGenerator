@@ -49,7 +49,10 @@ partial class {2}
         public readonly static string GrpcCaseTemplate = @"
 
                 case {0} {1}:
-                     await response.WriteAsync({2});
+                     await response.WriteAsync(new MethodResponse 
+                           {{
+                               {2}Value = {3}
+                           }});
                 break;";
 
         public readonly static string MethodBodyTemplate = @"

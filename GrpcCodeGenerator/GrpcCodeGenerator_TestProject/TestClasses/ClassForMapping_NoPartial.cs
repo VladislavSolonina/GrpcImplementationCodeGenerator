@@ -1,7 +1,6 @@
 ﻿using Grpc.Core;
 using GrpcCodeGenerator_TestProject.Attributes;
 using GrpcCodeGenerator_TestProject.Interfaces;
-using GrpcCodeGenerator_TestProject.MethodMessages;
 using GrpcCodeGenerator_TestProject.Notifications;
 
 namespace GrpcCodeGenerator_TestProject.TestClasses

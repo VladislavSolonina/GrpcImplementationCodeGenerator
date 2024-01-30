@@ -11,9 +11,31 @@ message MethodRequest
     string Field1258 = 3;
 }
  
+message MethodMessage_First
+{
+    string Field_MM1_1 = 1;    
+}
+message MethodMessage_Second
+{    
+    string Field_MM2_1 = 1;
+    string Field_MM2_2 = 2;
+}
+message MethodMessage_Third
+{
+    string Field_MM3_1 = 1;
+    string Field_MM3_2 = 2;
+    string Field_MM3_3 = 3;
+} 
+
 message MethodResponse
 {
     string Responce = 1;
+
+    oneof Tag {
+        MethodMessage_First MethodMessage_FirstValue = 2;
+        MethodMessage_Second MethodMessage_SecondValue = 3;
+        MethodMessage_Third MethodMessage_ThirdValue = 4;
+    }
 }
  
 service MyGrpcApi 

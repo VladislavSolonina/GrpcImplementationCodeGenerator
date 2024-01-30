@@ -250,15 +250,16 @@ namespace GrpcCodeGenerator.Generators
                         foreach(var fieldName in propertiesName)
                         {
                             stringBuilderNotifArgs.Append($@"
-                                                {notificationIteration}.{fieldName},");
+                                                           {notificationIteration}.{fieldName},");
                         }
 
                         stringBuilderNotifArgs.Length -= 1; //Удаление последней запятой
                         stringBuilderCases.AppendFormat(GrpcTemplates.GrpcCaseTemplate, 
                                                         namedArgs[0].Value.GetShortName(), 
-                                                        notificationIteration, 
+                                                        notificationIteration,
+                                                        classMessageName.Replace("_", string.Empty),
                                                         $@"new {classMessageName}({stringBuilderNotifArgs}
-                                               )");
+                                                         )");
                     }
                 }
             }
